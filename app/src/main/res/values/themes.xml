@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Gen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_show</item>
+        <item name="colorPrimaryVariant">@color/background_toolBar</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tool_enable</item>
+        <item name="colorSecondaryVariant">@color/tool_enable</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/ButtonNormal</item>
+
+    </style>
+
+    <style name="Theme.AppCompat.FullScreen" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ButtonNormal" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/tool_enable</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="elevation">5dp</item>
+    </style>
+
+    <style name="InputLayout.Form" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeColor">@color/background_strokes</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="helperTextTextColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="InputLayout.Circle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="helperTextTextColor">@android:color/holo_red_light</item>
+        <item name="boxStrokeColor">@color/background_strokes</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+    </style>
+
+
+</resources>

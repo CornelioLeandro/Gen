@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leandro.gen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gen">
+        <activity
+            android:name=".ui.fragments.register.RegisterFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fragments.login.LoginFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashScreen"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.FullScreen"
+            />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
